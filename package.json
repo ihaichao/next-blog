@@ -6,6 +6,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "material-ui": "next",
     "next": "^4.2.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0"
