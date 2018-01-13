@@ -1,12 +1,17 @@
+import React from 'react'
 import Link from 'next/link'
 import Head from '../components/head'
+import Nav from '../components/Nav'
 
-export default () => (
-  <div>
-    <Head title="My blog" />
+class Index extends React.Component {
+  render() {
+    return (
+      <div>
+        <Head title="My blog" />
+        <Nav />
+      </div>
+    )
+  }
+} 
 
-    <style jsx>{`
-      
-    `}</style>
-  </div>
-)
+export default Index
