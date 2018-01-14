@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 class CollapseBar extends Component {
 	render() {
-		const {fixed, toggle} = this.props.context;
+		const {toggle, fixed} = this.props.context;
 		return (
 			<div className={toggle ? 'wrapper in' : 'wrapper'}>
 				<div className={`root ${fixed ? 'fixed' : ''}`} ref="bar">
@@ -37,7 +37,7 @@ class CollapseBar extends Component {
 	}
 
 	componentDidUpdate() {
-		var $bar = this.refs.bar;
+		const $bar = this.refs.bar;
 		if (this.props.context.toggle) {
 			$bar.style.height = "auto";
 		} else {
@@ -48,6 +48,7 @@ class CollapseBar extends Component {
 	}
 
 	handleClick(e) {
+		console.log(this.props)
 		if (this.props.button.state) {
 			this.props.button.handler();
 		}

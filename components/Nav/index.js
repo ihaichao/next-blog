@@ -23,12 +23,12 @@ class Nav extends Component {
       <nav className={`root ${fixed ? 'fixed' : ''} ${visible ? 'visible' : ''}`}>
         <div className="container-fluid">
           <div className="header">
-            <ToggleButton click={this.props.toggle} />
+            <ToggleButton click={() => this.toggle} />
             <Link href="/">
               <a className="brand">{title}</a>
             </Link>
           </div>
-          <CollapseBar context={col} button={{state: toggle, handler: this.props.toggle}}/>
+          <CollapseBar context={col} button={{state: toggle, handler: this.toggle}}/>
         </div>
         <style jsx>{style}</style>
       </nav>
@@ -94,7 +94,13 @@ class Nav extends Component {
 		// this.setState({
 		// 	pre: currentTop,
 		// });
-	}
+  }
+  
+  toggle() {
+    const state = Object.assign({}, this.state, { toggle: !this.state.toggle })
+    console.log(state)
+    this.setState(state)
+  }
 }
 
 export default Nav
