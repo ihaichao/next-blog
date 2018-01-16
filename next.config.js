@@ -20,24 +20,6 @@ module.exports = {
         'styled-jsx-css-loader',
       ],
     })
-    // config.module.rules.push({
-    //   test: /\.scss$/,
-    //   use: [
-    //     'style-loader',
-    //     'css-loader',
-    //     'sass-loader'
-    //   ],
-    //   exclude: /node_modules/
-    // })
-
-    // config.plugins.push(
-    //   new webpack.DefinePlugin({
-    //     "process.env": {
-    //       // flag to indicate this is for browser-side
-    //       BROWSER: JSON.stringify(true)
-    //    }
-    //   })
-    // )
     return config
   }
 }

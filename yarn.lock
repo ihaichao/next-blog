@@ -3304,6 +3304,10 @@ normalize-url@2.0.1:
     query-string "^5.0.1"
     sort-keys "^2.0.0"
 
+normalize.css@^7.0.0:
+  version "7.0.0"
+  resolved "http://registry.npm.taobao.org/normalize.css/download/normalize.css-7.0.0.tgz#abfb1dd82470674e0322b53ceb1aaf412938e4bf"
+
 "npm-package-arg@^3.0.0 || ^4.0.0 || ^5.0.0":
   version "5.1.2"
   resolved "http://registry.npm.taobao.org/npm-package-arg/download/npm-package-arg-5.1.2.tgz#fb18d17bb61e60900d6312619919bd753755ab37"

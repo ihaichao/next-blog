@@ -91,6 +91,7 @@
     .root {
       position: absolute;
       right: 0;
+      top: 50px;
       width: 170px;
       height: 0; // to solve container-mask-tags issue (default state).
       background: white;

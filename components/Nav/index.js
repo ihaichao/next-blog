@@ -23,7 +23,7 @@ class Nav extends Component {
       <nav className={`root ${fixed ? 'fixed' : ''} ${visible ? 'visible' : ''}`}>
         <div className="container-fluid">
           <div className="header">
-            <ToggleButton click={() => this.toggle} />
+            <ToggleButton click={() => this.toggle()} />
             <Link href="/">
               <a className="brand">{title}</a>
             </Link>
@@ -98,7 +98,6 @@ class Nav extends Component {
   
   toggle() {
     const state = Object.assign({}, this.state, { toggle: !this.state.toggle })
-    console.log(state)
     this.setState(state)
   }
 }
