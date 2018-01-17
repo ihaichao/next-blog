@@ -5,7 +5,7 @@ class ToggleButton extends Component {
 	render() {
 		return (
 			<div>
-				<button type="button" className="root" onClick={(e) => this.handleClick(e)}>
+				<button type="button" className="toggle-btn" onClick={(e) => this.handleClick(e)}>
 					<span className="sr-only">Toggle navigation</span>
 					<span className="icon-bar"></span>
 					<span className="icon-bar"></span>

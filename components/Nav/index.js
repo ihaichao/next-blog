@@ -20,7 +20,7 @@ class Nav extends Component {
     const {fixed, visible, toggle} = this.state
     const col = {fixed, toggle}
     return (
-      <nav className={`root ${fixed ? 'fixed' : ''} ${visible ? 'visible' : ''}`}>
+      <nav className={`nav-bar ${fixed ? 'fixed' : ''} ${visible ? 'visible' : ''}`}>
         <div className="container-fluid">
           <div className="header">
             <ToggleButton click={() => this.toggle()} />
@@ -52,10 +52,7 @@ class Nav extends Component {
   handleScroll(e) {
 		let currentTop = window.scrollY;
 		const $header = document.querySelector('header');
-		// const pre = this.state.pre;
-    // const nav = this.state.nav;
     const { pre, toggle, fixed, visible } = this.state
-		// const {visible, fix} = this.props;
 
 		if (currentTop < pre) {
 			if (currentTop > 0 && nav.fixed) {

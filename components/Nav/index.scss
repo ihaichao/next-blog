@@ -1,6 +1,6 @@
 @import 'common/styles/variables.scss';
 
-.root {
+.nav-bar {
   position: absolute;
   top: 0;
   right: 0;
@@ -10,7 +10,6 @@
   min-height: 50px;
   margin-bottom: 20px;
   font-family: $font-family-base;
-  // materialize
   background: none;
   border: none;
   border-radius: 0;

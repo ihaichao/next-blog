@@ -6,8 +6,8 @@ class CollapseBar extends Component {
 	render() {
 		const {toggle, fixed} = this.props.context;
 		return (
-			<div className={toggle ? 'wrapper in' : 'wrapper'}>
-				<div className={`root ${fixed ? 'fixed' : ''}`} ref="bar">
+			<div className={`collapse-wrapper ${toggle ? ' in' : ''}`}>
+				<div className={`collapse ${fixed ? 'fixed' : ''}`} ref="bar">
 					<ul className="bar" onClick={(e) => this.handleClick(e)}>
 						<li>
 							<Link href="/">
@@ -48,7 +48,6 @@ class CollapseBar extends Component {
 	}
 
 	handleClick(e) {
-		console.log(this.props)
 		if (this.props.button.state) {
 			this.props.button.handler();
 		}
