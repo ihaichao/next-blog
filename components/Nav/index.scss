@@ -13,7 +13,6 @@
   background: none;
   border: none;
   border-radius: 0;
-  background: #000;
 
   .header {
     margin-right: -15px;
@@ -36,7 +35,6 @@
   }
 
   @media only screen and (min-width: 768px) {
-    background: #000;
     border-bottom: 1px solid transparent;
     .header {
       float: left;

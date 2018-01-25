@@ -9,6 +9,7 @@
     "next": "^4.2.1",
     "next-routes": "^1.2.0",
     "normalize.css": "^7.0.0",
+    "prop-types": "^15.6.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0"
   },
