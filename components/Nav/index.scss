@@ -1,4 +1,4 @@
-@import 'common/styles/variables.scss';
+@import "common/styles/variables.scss";
 
 .nav-bar {
   position: absolute;
@@ -14,7 +14,7 @@
   border: none;
   border-radius: 0;
 
-  .header {
+  .wrapper {
     margin-right: -15px;
     margin-left: -15px;
     @mixin clearFix {
@@ -36,7 +36,7 @@
 
   @media only screen and (min-width: 768px) {
     border-bottom: 1px solid transparent;
-    .header {
+    .wrapper {
       float: left;
       margin-right: 0;
       margin-left: 0;

@@ -3,7 +3,7 @@ import ToggleButton from "../ToggleButton"
 import CollapseBar from "../CollapseBar"
 import Link from 'next/link'
 import { title } from '../../constants'
-import style from './index.scss'
+import './index.scss'
 
 class Nav extends Component {
   constructor(props) {
@@ -22,7 +22,7 @@ class Nav extends Component {
     return (
       <nav className={`nav-bar ${fixed ? 'fixed' : ''} ${visible ? 'visible' : ''}`}>
         <div className="container-fluid">
-          <div className="header">
+          <div className="wrapper">
             <ToggleButton click={() => this.toggle()} />
             <Link href="/">
               <a className="brand">{title}</a>
@@ -30,7 +30,6 @@ class Nav extends Component {
           </div>
           <CollapseBar context={col} button={{state: toggle, handler: this.toggle}}/>
         </div>
-        <style jsx>{style}</style>
       </nav>
     );
   }

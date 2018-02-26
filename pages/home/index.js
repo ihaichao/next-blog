@@ -3,20 +3,22 @@ import Link from 'next/link'
 import Head from '../../components/head'
 import Nav from '../../components/Nav'
 import Header from '../../components/Header'
-import style from './index.scss'
+import PreviewList from '../../components/PreviewList'
+import './index.scss'
 import pageInfo from '../../config/page-info'
 
-class Index extends React.Component {
+export default class Index extends React.Component {
+  static async getInitialProps () {
+    return {}
+  }
+
   render() {
     return (
       <div>
-        <Head title="My blog" />
+        <Head title="Zongzheng blog" />
         <Nav />
         <Header info={pageInfo.index} />
-        <style global jsx>{style}</style>
       </div>
     )
   }
-} 
-
-export default Index
+}

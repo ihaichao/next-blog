@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import PropTypes from 'prop-types'
 import moment from "moment"
-import style from "./index.scss"
+import "./index.scss"
 
 class Header extends Component {
   static propTypes = {
@@ -51,7 +51,6 @@ class Header extends Component {
             </div>
           </div>
         </div>
-        <style jsx>{style}</style>
       </header>
     )
   }

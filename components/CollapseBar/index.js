@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import style from './index.scss'
+import './index.scss'
 import Link from 'next/link'
 
 class CollapseBar extends Component {
@@ -31,7 +31,6 @@ class CollapseBar extends Component {
 						</li>
 					</ul>
 				</div>
-				<style jsx>{style}</style>
 			</div>
 		);
 	}

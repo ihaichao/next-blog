@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import style from './index.scss'
+import './index.scss'
 
 class ToggleButton extends Component {
 	render() {
@@ -11,7 +11,6 @@ class ToggleButton extends Component {
 					<span className="icon-bar"></span>
 					<span className="icon-bar"></span>
 				</button>
-				<style jsx>{style}</style>
 			</div>
 		);
 	}

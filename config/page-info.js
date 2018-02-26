@@ -1,7 +1,7 @@
 export default {
   index: {
     type: "index",
-    title: "Haichao Blog",
+    title: "zongzheng blog",
     subtitle: "把生命浪费在美好的事物上",
     image: "./static/home-bg.jpg",
     portrait: ""
@@ -9,7 +9,7 @@ export default {
   about: {
     type: "about",
     title: "About",
-    subtitle: "嗨，我是海潮",
+    subtitle: "嗨，我是张宗正",
     image: "./static/home-bg.jpg",
     portrait: ""
   }
